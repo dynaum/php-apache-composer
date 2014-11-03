@@ -15,4 +15,4 @@ This repository contains **Dockerfile** of Php, Apache and Composer for [Docker]
 
 ### Usage
 
-    docker run -it --rm --name my-apache-php-composer-app -v "$(pwd)":/var/www/html dynaum/php-apache-composer
+    docker run -it --rm --name my-app -v "$(pwd)":/var/www/html dynaum/php-apache-composer
