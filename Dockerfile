@@ -17,5 +17,8 @@ RUN composer --version
 # PHP Extensions
 RUN apt-get update && \
     apt-get -y install \
+    mcrypt \
     php5-mcrypt \
     php5-intl
+
+RUN php5enmod mcrypt
