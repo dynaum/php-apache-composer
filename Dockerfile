@@ -13,3 +13,9 @@ RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local
 
 # Display Composer version information
 RUN composer --version
+
+# PHP Extensions
+RUN apt-get update && \
+    apt-get -y install \
+    php5-mcrypt \
+    php5-intl
